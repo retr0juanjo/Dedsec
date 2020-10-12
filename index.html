@@ -1,60 +1,47 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>This is my first web page</title>
+<head>
+<title>validar si la clave y la repeticion de la clave- son iguales</title>
+<script>
+	function comprobarClave(){
+		clave1 = document.f1.clave1.value
+		clave2 = document.f1.clave2.value
 
+		if(clave1 == "juanjo" && clave2 == "juanjo"){
+			alert("Datos correctos . . . \n Bienvenido");
+			var href = "index.html";
+			window.location=href;
+		}
 
-	<link rel="stylesheet"
-		  type="text/css"
-		  href="bootstrap.css"
-	      />
+		else{
+			alert("los datos son incorrectos . . .\n Intentar de nuevo.");
+			var href = "index2.html";
+			window.location=href;
+		};
 
-	<link rel="stylesheet"
-		  type="text/css"
-		  href="styles.css"
-	      />	
-	</head>
+	}
+</script>
+</head>
+
 	<body>
 		<body background="prueba4.jpg">
-		<header>
-			<h1>Bienvenidos a DEDSEC<h1>
-		</header><br>
-		<a 
-		href="index.html">
-			<font color="pink">Inicioh</font>
-		</a>
-		 &nbsp;
-		<a 
-		href="aboutme.html">
-			<font color="pink">Información</font>
-		</a>
-		&nbsp;
-		<a 
-		href="contact.html" class="greenlink">
-			<font color="pink">contacto></font>
-		</a>
-		 &nbsp;
-		<a 
-		href="productos.html">
-			<font color="pink">Productos</font>
-		</a>
+			<font color="pink" face="courier new">
+		<h1> Validar si la contraseña y su repeticion son iguales</h1> </font>
+		<br>
+		Escribe una respuesta correcta dos veces, una en cada campo, y pulsa el boton. Javascrip te dira si son iguales.
 
-		</hr>
-	<div class="container">
-		<font color="black"><H1>DEDSEC</H1></font>
+		<br>
+		<br>
+		<form action=""name="f1">
+			<h3>Clave</h3> <input type="password" name="clave1" size="40">
+			<br>
+			<br>
+			<h3>Repite Clave</h3> <input type="password" name="clave2" size="40">
+			<br>
+			<br>
+			<input type="button" value="Entrar" onClick="comprobarClave()">
 
-		<div class="row">
-			<div class="col-md-3 thin_border">
-				<font color="black"><H1>MISIÓN:<H1></font>
-			</div> <br>
-				<font color="black"><h3>DEDSEC, una empresa con la mision de satisfacer a sus clientes y dejar un buena experiencia acerca de la empresa con la ayuda de sus trabajadores y servicios.<h3> <hr> </h3></font>
-			</div>
-			<div class="col-md-9 thin_border">
-				<font color="black"><h1>VISIÓN:<h1></font>
-			</div> <br>
-				 <font color="black"><h3> La vision de DEDSEC es expandir y ofrecer un servicio mas accesible rápido y sencillo en las compras de nuestros productos <h3>   <hr></font>
-			</div>
-		</div>
-	</div>
-    <FOOTER> </FOOTER>
+		</form>
+
 	</body>
 </html>
