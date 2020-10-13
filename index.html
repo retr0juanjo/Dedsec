@@ -7,15 +7,15 @@
 		clave1 = document.f1.clave1.value
 		clave2 = document.f1.clave2.value
 
-		if(clave1 == "juanjo" && clave2 == "juanjo"){
+		if(clave1 == "juanjo" && clave2 == "hernandez"){
 			alert("Datos correctos . . . \n Bienvenido");
-			var href = "index.html";
+			var href = "index2.html";
 			window.location=href;
 		}
 
 		else{
 			alert("los datos son incorrectos . . .\n Intentar de nuevo.");
-			var href = "index2.html";
+			var href = "index.html";
 			window.location=href;
 		};
 
@@ -33,10 +33,10 @@
 		<br>
 		<br>
 		<form action=""name="f1">
-			<h3>Clave</h3> <input type="password" name="clave1" size="40">
+			<h3>USUARIO</h3> <input type="password" name="clave1" size="40">
 			<br>
 			<br>
-			<h3>Repite Clave</h3> <input type="password" name="clave2" size="40">
+			<h3>CONTRASEÑA</h3> <input type="password" name="clave2" size="40">
 			<br>
 			<br>
 			<input type="button" value="Entrar" onClick="comprobarClave()">
